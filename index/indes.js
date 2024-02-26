@@ -3,6 +3,49 @@ function sumar(num1, num2) {
     return num1 + num2;
   }
   
+  // Función para restar dos números
+function restar(a, b) {
+  return a - b;
+}
+
+// Función para multiplicar dos números
+function multiplicar(a, b) {
+  return a * b;
+}
+
+// Función para dividir dos números
+function dividir(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return "Error: No se puede dividir por cero";
+  }
+}
+
+// Función para calcular el factorial de un número
+function factorial(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
+}
+
+
+// Función para calcular el exponente de un número
+function exponente(base, exponenteNum) {
+  return Math.pow(base, exponenteNum);
+}
+
+// Función para calcular la raíz cuadrada de un número
+function raizCuadrada(num) {
+  if (num >= 0) {
+    return Math.sqrt(num);
+  } else {
+    return "Error: No se puede calcular la raíz cuadrada de un número negativo";
+  }
+}
+
   // Función principal del programa
   function calculadora() {
     var opcion = prompt(
